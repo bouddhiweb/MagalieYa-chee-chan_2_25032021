@@ -1,0 +1,116 @@
+
+@font-face
+{
+    font-family: 'raleway';
+    src:url('font/Raleway-Medium.ttf') format('ttf');
+}
+
+body {
+            /* haut | droit | bas | gauche */
+    padding: 5px 50px 10px 30px ;
+    font-family:raleway,sans-serif;
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-items {
+    list-style: none;
+    padding-top: 30px;
+    margin-right: 50px;
+    font-size: 1.2em;
+    border-top: white 2px solid;
+    color: black;
+}
+
+.menu-items:hover {
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+}
+
+#menu-subscription {
+    list-style: none;
+    padding-top: 30px;
+    margin-right: 50px;
+    font-size: 1.2em;
+    border-top: white 2px solid;
+    color: #0065FC;
+    font-weight: 600;
+}
+
+#logo {
+    padding-top: 30px;
+    width: auto;
+    height: 50px;
+}
+
+/* Searchbar */
+
+#searchbar-h2 {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.input-div {
+    width: fit-content;
+    display: flex;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(242, 242, 242);
+    border-image: initial;
+}
+
+#input-group-icon {
+    background-color: rgb(242, 242, 242);
+    padding: 15px 20px;
+    border-radius: 15px 0 0 15px;
+}
+
+.input-group {
+    padding: 15px;
+}
+
+#form-control {
+    font-family: raleway, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+#form-control::placeholder {
+    color: black;
+}
+
+#input-group-button {
+    background-color: rgb(0, 101, 252);
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+}
+
+/* Filters */
+
+#filters {
+
+}
+
+@media screen and (max-width: 768px)
+{
+
+}
+@media screen and (max-width:1024px)
+{
+
+}
