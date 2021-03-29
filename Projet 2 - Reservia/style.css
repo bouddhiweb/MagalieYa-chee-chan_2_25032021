@@ -285,6 +285,72 @@ nav ul {
     justify-content: space-between;
 }
 
+/* Activities */
+
+#activities {
+    margin: 60px 0;
+;
+}
+
+#activities h2{
+    margin: 0 0 1.3em 0;
+}
+
+/***************** flexbox *********************/
+
+#activities-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.activities-container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#activities-container figure {
+    margin: 0;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0 0 5px 0;
+}
+
+#activities-container img {
+    object-fit: cover;
+    max-width: 320px;
+    height: 90%;
+}
+
+.large-card img {
+    max-height: 550px;
+}
+
+ #medium-card img{
+     height: 300px;
+     width: 320px;
+     object-fit: cover;
+}
+#small-card img {
+    height: 150px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.half-card img{
+    height:200px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.activity-title {
+    padding: 15px 0 15px 25px; /* haut | droit | bas | gauche */
+    font-weight: 700;
+    font-size: 1.3em;
+
+}
+
 /* Footer */
 
 footer {
