@@ -18,21 +18,13 @@
 </head>
 <body>
 
-<header id="main-header">
-    <nav>
-        <figure>
-            <img id="logo" src="images/logo/Reservia@3x.png" alt="logo Reservia">
-        </figure>
-        <div id="menu-items">
-            <ul>
-                <li class="menu-items"><a href="#hosting-content">Hébergement</a></li>
-                <li class="menu-items"><a href="#activities">Activités</a></li>
-            </ul>
-            <ul>
-                <li id="menu-subscription" class="menu-items"><a href="#">S'inscrire</a></li>
-            </ul>
-        </div>
+<header class="header">
+    <img id="logo" class="logo" src="images/logo/Reservia@3x.png" alt="Reservia">
+    <nav id="navbar" class="navbar">
+        <a class="navbar-items" href="#hosting-content">Hébergement</a>
+        <a class="navbar-items" href="#activities">Activités</a>
     </nav>
+    <a id="button" class="navbar-signup" href="#">S'inscrire</a>
 </header>
 
 <main>
@@ -46,12 +38,16 @@
                 </div>
                 <input type="text" class="input-group" id="form-control" placeholder="Marseille, France" aria-label="search-location">
                 <div id="input-group-button">
-                    <span>Rechercher</span>
+                    <a href="">
+                    <span class="search-text">Rechercher</span>
+                    <i class="search-icon fas fa-search" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
         <div id="filters">
             <h3 id="filters-title">Filtres</h3>
+            <div id="filters-container">
             <div class="filters-items">
             <span class="filters-icons">
                 <i class="fas fa-money-bill-wave"></i>
@@ -84,6 +80,7 @@
                     Animaux autorisés
             </span>
             </div>
+            </div>
         </div>
         <div id="informations">
             <span id="informations-icon">
@@ -94,7 +91,7 @@
             </span>
         </div>
     </section>
-    <section id="hosting-content">
+    <div id="hosting-content">
         <article  class="hosting">
             <header class="hosting-header">
                 <h2>Hébergements à Marseille</h2>
@@ -197,7 +194,7 @@
                     </div>
                 </article>
             </div>
-            <a href="#">Afficher plus</a>
+            <a id="read-more" href="#">Afficher plus</a>
         </article>
         <aside class="hosting">
             <header class="hosting-header">
@@ -261,50 +258,62 @@
             </article>
 
         </aside>
-    </section>
+    </div>
     <section id="activities">
         <header>
             <h2>Activités à Marseille</h2>
         </header>
         <div id="activities-container">
             <div class="large-card">
+                <a href="">
                 <figure>
                     <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
                     <figcaption class="activity-title">Vieux Port</figcaption>
                 </figure>
+                </a>
             </div>
             <div class="activities-container-column">
                 <div id="small-card">
+                    <a href="">
                     <figure>
                         <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Desert rocailleux beige avec un fort elle aussi beige un peu plus loin dans l'image">
                         <figcaption class="activity-title">Fort de Pomègues</figcaption>
                     </figure>
+                    </a>
                 </div>
                 <div id="medium-card">
+                    <a href="">
                     <figure>
                         <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Longue vue sur terre en premier plan, mer en second plan et ile en troisième plan">
                         <figcaption class="activity-title">Île du Frioul</figcaption>
                     </figure>
+                    </a>
                 </div>
             </div>
             <div class="large-card">
+                <a href="">
                 <figure>
                     <img src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
                     <figcaption class="activity-title">Parc National des Calanques</figcaption>
                 </figure>
+                </a>
             </div>
             <div class="activities-container-column">
                 <div class="half-card">
+                    <a href="">
                     <figure>
                         <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Grande ville assez plate mais doté d'une colline qui mets en valeur un bâtiment, certainement religieux">
                         <figcaption class="activity-title">Notre-Dame-de-la-Garde</figcaption>
                     </figure>
+                    </a>
                 </div>
                 <div class="half-card">
+                    <a href="">
                     <figure>
                         <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Majestueux batiment au pierres blanches dôté d'une fontaine, tout autant majestueuse">
                         <figcaption class="activity-title">Parc Longchamp</figcaption>
                     </figure>
+                    </a>
                 </div>
             </div>
         </div>
